@@ -8,14 +8,16 @@
     <link href="/Resources/CSS/Index.css" type="text/css" rel="stylesheet">
 </head>
 <body>
-    <video id="background-video" width="1920" height="1080" autoplay muted loop>
+    <video id="background-video" width="100%" height="auto" autoplay muted loop poster>
         <source src="/Resources/Videos/production ID_4517394.mp4" type="video/mp4">
     </video>
     <div id="header">
+        <img id="logo" src="Resources/Images/seashell.png" width="128px" height="128px">
         <h1 id="title">SunShine Shores Experience Survey</h1>
         <p id="description">Thank you for helping us make this resort a better place</p>
-    </div>
-    <form id="survey-form">
+    </div>    
+    <main>
+        <form id="survey-form">
             <label for="name-label" id="name-label">
                 <input id="name" type="text" placeholder="Name" required>
             </label>
@@ -24,40 +26,41 @@
             </label>       
             <label for="number-label" id="number-label">
                 <input id="number" type="number" name="Age" min="10" max="99" placeholder="Age" == 0$>
-        <div id="favorite-feature-container">
-            <label for="dropdown" id="dropdown"></label>
-            <select name="dropdown" id="dropdown">
-                <option value="">Pool-area</option>
-                <option value="">Fine dining</option>
-                <option value="">Free city parking</option>
-                <option value="">Sea side access</option>
-            </select>
-        </div>
-        <div id="radio-button-container">
-            <label><input id="radio-button1" type="radio" name="Would you recommend" value="Yes">Yes</label>
-            <label><input id="radio-button2" type="radio" name="Would you recommend" value="Maybe">Maybe</label>
-            <label><input id="radio-button3" type="radio" name="Would you recommend" value="No">No</label>
-        </div>
-        <div id="checkbox-container">
-            <h2>What needs work?</h2>
-            <label for="What needs work">
-                <input id="Service" type="checkbox" name="Service" value="Service"> Service
-                <input id="Food" type="checkbox" name="Food" value="Food"> Food
-                <input id="Amenities" type="checkbox" name="Amenities" value="Amenities">Amenities
-                <input id="Stay" type="checkbox" name="Stay" value="Stay"> Stay
-                <input id="Facilities" type="checkbox" name="Facilities" value="Facilities"> Facilities
-                <input id="Bedding" type="checkbox" name="Bedding" value="Bedding">Bedding
-                <input id="Ambiance" type="checkbox" name="Ambiance" value="Ambiance">Ambiance
-            </label>
-        </div>
-        <div id="additional-input-container">
-            <label for="additional-comments">
-                <textarea id="additional-comments" name="additional-comments" placeholder="Additional suggestions"></textarea>
-            </label>
-        </div>
-        <div id="submit-button-container">
-            <button id="submit" type="submit">Submit</button>
-        </div>
-    </form>
+            <div id="favorite-feature-container">
+                <label for="dropdown" id="dropdown"></label>
+                <select name="dropdown" id="dropdown">
+                    <option value="">Pool-area</option>
+                    <option value="">Fine dining</option>
+                    <option value="">Free city parking</option>
+                    <option value="">Sea side access</option>
+                </select>
+            </div>
+            <div id="radio-button-container">
+                <label><input id="radio-button1" type="radio" name="Would you recommend" value="Yes">Yes</label>
+                <label><input id="radio-button2" type="radio" name="Would you recommend" value="Maybe">Maybe</label>
+                <label><input id="radio-button3" type="radio" name="Would you recommend" value="No">No</label>
+            </div>
+            <div id="checkbox-container">
+                <h2>What needs work?</h2>
+                <label for="What needs work">
+                    <input id="Service" type="checkbox" name="Service" value="Service"> Service
+                    <input id="Food" type="checkbox" name="Food" value="Food"> Food
+                    <input id="Amenities" type="checkbox" name="Amenities" value="Amenities">Amenities
+                    <input id="Stay" type="checkbox" name="Stay" value="Stay"> Stay
+                    <input id="Facilities" type="checkbox" name="Facilities" value="Facilities"> Facilities
+                    <input id="Bedding" type="checkbox" name="Bedding" value="Bedding">Bedding
+                    <input id="Ambiance" type="checkbox" name="Ambiance" value="Ambiance">Ambiance
+                </label>
+            </div>
+            <div id="additional-input-container">
+                <label for="additional-comments">
+                    <textarea id="additional-comments" name="additional-comments" placeholder="Additional suggestions"></textarea>
+                </label>
+            </div>
+            <div id="submit-button-container">
+                <button id="submit" type="submit">Submit</button>
+            </div>
+        </form>
+    </main>
 </body>
 </html>
