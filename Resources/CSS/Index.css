@@ -1,32 +1,5 @@
 * {
     box-sizing: border-box;
     padding: 0;
-    margin: 0;
-}
-
-#background-video {
-    width: 100vw;
-    height: 100vh;
-    object-fit: cover;
-    position: fixed;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: -1;
-}
-
-main {
-    background-color: lightblue;
-    font-size: 2rem;
-    margin-top: 100vh;
-    padding: 10px;
-    position: relative;
-}
-
-#survey-form {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    margin: 0; 
 }
