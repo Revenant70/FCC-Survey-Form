@@ -25,13 +25,12 @@
 
 #form-container {
     background-color: white;
-    margin-top: 60vh;
+    margin-top: 55vh;
     display: flex;
     justify-content: center;    
 }
 
 #survey-form {
-    position: relative;
     display: flex;
     flex-direction: column;
     background-color: violet;
@@ -50,8 +49,13 @@
     width: 100%;
 }
 
+label {
+    display: inline-block;
+  }
+
 .input-box {
-    width: 47vw;
+    display: flex;
+    width: 46vw;    
     margin: 2px;
 }
 
@@ -70,6 +74,8 @@
 }
 
 #additional-comments {
-    width: 47vw;
+    max-width: 46vw;
+    width: 100%;
+    margin: 2px;
     resize: vertical;
 }
