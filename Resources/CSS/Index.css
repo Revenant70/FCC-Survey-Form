@@ -2,6 +2,9 @@
     box-sizing: border-box;
     padding: 0;
     margin: 0; 
+    font-family: 'Times New Roman', sans-serif;
+    --form-header-font-size: 1.777rem;
+    --input-font-size: 1rem;
 }
 
 #background-video {
@@ -35,18 +38,26 @@
     background-color: white;
     margin-top: 55vh;
     display: flex;
-    justify-content: center;    
-}
+    justify-content: center;
+    line-height: 2.3;
+    font-size: 1.333rem;;
+}   
 
 #survey-form {
     display: block;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    background-color: #00C8E6;
+    background-color: #F1E9E1;
     width: 50vw;
-    margin: 20px;
-    padding: 20px;
+    margin: 40px;
+    padding: 30px;
+}
+
+#survey-form p {
+    font-size: 1.777rem;
+    margin-top: 25px;
+    margin-bottom: -15px;
 }
 
 #names-and-dropdown {
@@ -54,7 +65,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
     height: auto;
     width: 100%;
 }
@@ -63,11 +73,70 @@
     display: inline-block;
 }
 
+#name-div p {
+    margin: -25px 0px -15px 0px;
+}
+
 .input-box {
     width: 100%;
+    padding: 5px;
+    color: black;
+    border-radius: 5px;
+    text-decoration: none;
+    border: 2px solid #ccc;
+}
+
+.radio-button {
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    align-items: center;
+}
+
+.individual-radio-button {
+    width: 18px;
+    height: 18px;
+}
+
+#checkbox {
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    align-items: center;
+}
+
+.individual-checkboxes{
+    width: 18px;
+    height: 18px;
 }
 
 #additional-comments {
     width: 100%;
+    height: 65px;
     resize: vertical;
+    font-size: 1rem; 
+}
+
+#submit-button-container {
+    text-align: center;
+}
+
+#submit {
+    width: 100%;
+    height: 50px;
+    background-color: white;
+    color: #797979;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+}
+
+#submit-button-container :hover {
+    background-color: #ccc;
+    color: white;
+    cursor: pointer;
+    box-shadow: -1px 1px 3px black; 
+}
+
+::placeholder {
+    padding-top: 3px;
+    padding-left: 3px;
+    font-size: 1rem;
 }
