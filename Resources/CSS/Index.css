@@ -51,18 +51,21 @@
     background-color: #F1E9E1;
     width: 50vw;
     margin: 40px;
-    padding: 30px;
+    padding: 0px 30px 15px 30px;
 }
 
 #survey-form p {
     font-size: 1.777rem;
-    margin-top: 25px;
-    margin-bottom: -15px;
+    margin-bottom: -10px;
 }
 
+.individual-form-div {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 
-#name-div p {
-    margin: -25px 0px -15px 0px;
+#name p {
+    margin-top: -10px;
 }
 
 .input-box {
@@ -87,7 +90,13 @@
 
 #checkboxes {
     display: grid;
-    grid-template-rows: 25px 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+
+.checkbox-labels {
+    display: grid;
+    grid-template-columns: 25px 1fr;
     align-items: center;
 }
 
@@ -112,19 +121,39 @@
     height: 50px;
     background-color: white;
     color: #000000;
-    border: 2px solid #ccc;
+    border: 2px solid white;
     border-radius: 10px;
 }
 
 #submit-button :hover {
-    background-color: #ccc;
+    background-color: #04A65D;
     color: white;
     cursor: pointer;
-    box-shadow: -1px 1px 3px black; 
+    border: 2px solid #04A65D;
 }
 
 ::placeholder {
     padding-top: 3px;
     padding-left: 3px;
     font-size: 1rem;
+}
+
+@media only screen and (max-width: 1400px) {
+
+    #survey-form p {
+        font-size: 1.777rem;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        line-height: 1;
+    }
+
+    #name p {
+        margin-top: 10px;
+    }
+
+    #additional-comments p{
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }    
+    
 }

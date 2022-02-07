@@ -12,34 +12,33 @@
         <source src="/Resources/Videos/production ID_4517394.mp4" type="video/mp4">
     </video>
     <div id="header">
-        <img id="logo" src="Resources/Images/seashell.png" width="128" height="128" alt="Seashell logo">
+        <img id="logo" src="https://github.com/Revenant70/FCC-Survey-Form/blob/main/Resources/Images/seashell.png?raw=true" width="128" height="128" alt="Seashell logo">
         <h1 id="title">SunShine Shores Survey</h1>
         <p id="description">Thank you for helping us make this resort a better place</p>
     </div>
     <main>
         <div id="form-background">
             <form id="survey-form">
-                <div id="name">
+                <div id="name" class="individual-form-div">
                     <p>Name</p>
                         <label for="name-collection" id="name-label">
-                            <input id="name-collection" class="input-box" type="text" placeholder="Enter your name" required>
+                            <input id="name-collection" class="input-box" type="text" placeholder="Enter your name" name="name" required>
                         </label>
                 </div>
-                <div id="email">
+                <div id="email" class="individual-form-div">
                     <p>Email</p>
                     <label for="email-collection" id="email-label">
-                        <input id="email-collection" class="input-box" type="email" placeholder="Enter your email" required>
+                        <input id="email-collection" class="input-box" type="email" placeholder="Enter your email" name="email" required>
                     </label> 
                 </div>
-                <div id="number">
+                <div id="number" class="individual-form-div">
                     <p>Age</p>
                         <label for="age-collection" id="number-label">
                             <input id="age-collection" class="input-box" type="number" name="Age" min="10" max="99" placeholder="Age">
                         </label>
                 </div>
-                <div id="dropdown">
+                <div id="dropdown" class="individual-form-div">
                     <p>What was your favorite feature of the resort?</p>
-                        <label for="dropdown-menu" id="dropdown-menu"></label>
                         <select name="dropdown" class="input-box">
                             <option value="Pool-area">Pool-area</option>
                             <option value="Fine dining">Fine dining</option>
@@ -47,46 +46,46 @@
                             <option value="Sea side access">Sea side access</option>
                         </select>
                 </div>
-                <div id="radio">
+                <div id="radio" class="individual-form-div">
                     <p>Would you recommend the resort to a friend or relative</p>
-                    <label class="radio-button"><input type="radio" class="individual-radio-button" name="Would you recommend" value="Yes">Yes</label>
-                    <label class="radio-button"><input type="radio" class="individual-radio-button" name="Would you recommend" value="Maybe">Maybe</label>
-                    <label class="radio-button"><input type="radio" class="individual-radio-button" name="Would you recommend" value="No">No</label>
+                    <label class="radio-button"><input type="radio" class="individual-radio-button" id="radio1" name="Would you recommend" value="Yes">Yes</label>
+                    <label class="radio-button"><input type="radio" class="individual-radio-button" id="radio2" name="Would you recommend" value="Maybe">Maybe</label>
+                    <label class="radio-button"><input type="radio" class="individual-radio-button" id="radio3" name="Would you recommend" value="No">No</label>
                 </div>
 
-                <div id="checkboxes-container">
+                <div id="checkboxes-container" class="individual-form-div">
                     <p>What needs work?</p>
                     <div id="checkboxes">
-                        <label for="Service">
+                        <label for="Service" class="checkbox-labels">
                             <input id="Service" class="individual-checkboxes" type="checkbox" name="Service" value="Service">Service
                         </label>
-                        <label for="Food">
+                        <label for="Food" class="checkbox-labels">
                             <input id="Food" class="individual-checkboxes" type="checkbox" name="Food" value="Food">Food
                         </label>
-                        <label for="Amenities">
+                        <label for="Amenities" class="checkbox-labels">
                             <input id="Amenities" class="individual-checkboxes" type="checkbox" name="Amenities" value="Amenities">Amenities
                         </label>
-                        <label for="Stay">
+                        <label for="Stay" class="checkbox-labels">
                             <input id="Stay" class="individual-checkboxes" type="checkbox" name="Stay" value="Stay">Stay
                         </label>
-                        <label for="Facilities">
+                        <label for="Facilities" class="checkbox-labels">
                             <input id="Facilities" class="individual-checkboxes" type="checkbox" name="Facilities" value="Facilities">Facilities    
                         </label>
-                        <label for="Bedding">
+                        <label for="Bedding" class="checkbox-labels">
                             <input id="Bedding" class="individual-checkboxes" type="checkbox" name="Bedding" value="Bedding">Bedding
                         </label>
-                        <label for="Ambiance">
+                        <label for="Ambiance" class="checkbox-labels">
                             <input id="Ambiance" class="individual-checkboxes" type="checkbox" name="Ambiance" value="Ambiance">Ambiance
                         </label>
                     </div>
                 </div>
-                <div id="additional-comments">
+                <div id="additional-comments" class="individual-form-div">
                     <p>Any comments or suggestions?</p>
                     <label for="comments">
                         <textarea id="comments" name="additional-comments" placeholder="Enter your comments here..."></textarea>
                     </label>
                 </div>
-                <div id="submit-button">
+                <div id="submit-button" class="individual-form-div">
                     <button id="submit" type="submit">Submit</button>
                 </div>
             </form>
