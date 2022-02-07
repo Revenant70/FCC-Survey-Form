@@ -34,7 +34,7 @@
     font-size: 1.777rem;
 }
 
-#form-container {
+#form-background {
     background-color: white;
     margin-top: 55vh;
     display: flex;
@@ -60,18 +60,6 @@
     margin-bottom: -15px;
 }
 
-#names-and-dropdown {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: auto;
-    width: 100%;
-}
-
-#names-and-dropdown {
-    display: inline-block;
-}
 
 #name-div p {
     margin: -25px 0px -15px 0px;
@@ -97,9 +85,9 @@
     height: 18px;
 }
 
-#checkbox {
+#checkboxes {
     display: grid;
-    grid-template-columns: 25px 1fr;
+    grid-template-rows: 25px 1fr;
     align-items: center;
 }
 
@@ -108,14 +96,14 @@
     height: 18px;
 }
 
-#additional-comments {
+#comments {
     width: 100%;
     height: 65px;
     resize: vertical;
     font-size: 1rem; 
 }
 
-#submit-button-container {
+#submit-button {
     text-align: center;
 }
 
@@ -123,12 +111,12 @@
     width: 100%;
     height: 50px;
     background-color: white;
-    color: #797979;
+    color: #000000;
     border: 2px solid #ccc;
     border-radius: 10px;
 }
 
-#submit-button-container :hover {
+#submit-button :hover {
     background-color: #ccc;
     color: white;
     cursor: pointer;
