@@ -56,12 +56,6 @@
 
 #survey-form p {
     font-size: 1.777rem;
-    margin-bottom: -10px;
-}
-
-.individual-form-div {
-    padding-top: 10px;
-    padding-bottom: 10px;
 }
 
 #name p {
@@ -74,7 +68,7 @@
     color: black;
     border-radius: 5px;
     text-decoration: none;
-    border: 2px solid #ccc;
+    border: 2px solid white;
 }
 
 .radio-button {
@@ -110,6 +104,8 @@
     height: 65px;
     resize: vertical;
     font-size: 1rem; 
+    border-color: white;
+    border-radius: 10px;
 }
 
 #submit-button {
@@ -130,6 +126,10 @@
     color: white;
     cursor: pointer;
     border: 2px solid #04A65D;
+}
+
+.input-labels {
+    font-size: 1.777rem;
 }
 
 ::placeholder {
@@ -157,3 +157,4 @@
     }    
     
 }
+
